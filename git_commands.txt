@@ -1,0 +1,3 @@
+git add . // añade todos los archivos que han tenido cambios
+git commit -m // mensaje para ver que es lo que se ha cambiado entre versiones
+git push
