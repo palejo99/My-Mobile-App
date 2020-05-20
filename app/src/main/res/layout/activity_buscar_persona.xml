@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.franciscovahos.crudpersona.globalstate.BuscarPersona">
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="543dp"
+        android:background="@color/colorPrimaryDark"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/buscar"
+            android:layout_marginLeft="31dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="11dp"
+            android:background="@android:color/transparent"
+            android:onClick="onClickBuscar"
+            android:text="BUSCAR"
+            android:textColor="@android:color/background_dark"
+            android:textColorLink="@android:color/holo_orange_light"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="213dp" />
+
+        <TextView
+            android:id="@+id/informacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnBuscar"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textColor="@android:color/background_dark"
+            android:textColorLink="@android:color/background_dark" />
+
+        <AutoCompleteTextView
+            android:id="@+id/buscar"
+            style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="@android:color/holo_red_dark"
+            android:layout_marginLeft="43dp"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="33dp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:hint="Ingrese palabra a consultar"
+            android:inputType="textPersonName"
+            android:shadowColor="@android:color/holo_orange_light"
+            android:textColor="@android:color/background_dark"
+            android:textColorHighlight="@android:color/holo_red_dark"
+            android:textColorHint="@android:color/background_dark"
+            android:textColorLink="@android:color/holo_red_dark" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/buscar"
+            android:layout_marginTop="26dp"
+            app:srcCompat="@drawable/itachi_background" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
